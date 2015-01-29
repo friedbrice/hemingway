@@ -1,12 +1,19 @@
 import System.Environment (getArgs)
+import Data.Matrix
+
+
+a :: Matrix Integer
+a = fromLists [ [0, 1]
+              , [1, 1]
+              ]
+
+v :: Matrix Integer
+v = fromLists [ [0]
+              , [1]
+              ]
 
 fib :: Integer -> Integer
-
-fib 1 = 1
-fib 2 = 1
-fib 3 = 2
-
-fib n = fib(n-1) + fib(n-2)
+fib n = getElem 1 1 (a^n * v)
 
 make_range :: Integer -> [Integer]
 make_range n = if n > 0
