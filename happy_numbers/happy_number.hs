@@ -22,3 +22,4 @@ isHappy n = z == 1
 
 main :: IO()
 main = mapM_ print . (\n -> filter isHappy [1..n]) . read . head =<< getArgs
+
