@@ -23,4 +23,3 @@ main :: IO ()
 main = do
 	args <- getArgs
 	mapM_ (print . fib) $ makeRange ( read ( head args ) :: Integer )
-
