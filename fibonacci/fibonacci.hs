@@ -17,4 +17,3 @@ main :: IO ()
 main = do
 	args <- getArgs
 	mapM_ print . map fib $ make_range ( read ( head args ) :: Integer )
-
