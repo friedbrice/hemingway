@@ -22,4 +22,4 @@ function sayIt(word) {
     }
 }
 
-sayIt("Hey")("there!")()
+sayIt("Hey")("there!")();
