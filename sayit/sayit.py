@@ -25,3 +25,10 @@ class Words:
         else:
             self.words = self.words + [x]
         return self
+
+### As a closure
+
+closureSayIt = (lambda:
+    print('hi')
+    return (lambda:
+        print('there')))()
