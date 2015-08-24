@@ -1,23 +1,22 @@
-// This is garbage that won't compile.
-// I don't even know if functions an be return values (line 19).
-# include <stdio.h>
+#include <stdio.h>
 
-// Global for storing invoked parameters
-char words[];
+// // global for storing invoking parameters
+// char** words;
 
-sayIt( char word[] ) {
-    // Check to see if a parameter was given.
-    if (word[0] == '\0') {
-        // If no parameter, empty words and print.
-        char message = words;
-        words[0] = '\0';
-        printf(message);
-        return message;
-    } else {
-        // If a parameter is given, push to words and repeat.
-        words = words + ' ' + word
-        return sayIt;
-    }
-}
+// typedef int (*function)(char*);
 
-sayIt("Hey")("there!")()
+// // business function
+// void sayIt() {
+//     if (word == NULL) {
+//         // some logic
+//     } else {
+//         // some logic
+//         return sayItHelper;
+//     }
+// }
+
+// // main function, including some testing of the business function
+// int main(int argc, char const *argv[]) {    
+//     closureSayIt("hi")("earth");
+//     return 0;
+// }
