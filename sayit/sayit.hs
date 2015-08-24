@@ -20,6 +20,6 @@ main = do
         then print ""
         else main' input
 
--- will print "" if fed "() or "('x')('y')...('z')"
+-- will print "" if fed "()" or "('x')('y')...('z')"
 -- will print "x y ... z" if fed "('x')('y')...('z')()"
 -- accepts improperly formatted input and is unpredictable with it
