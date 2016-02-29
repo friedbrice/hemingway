@@ -5,7 +5,7 @@ public class Fibonacci {
     private int max;
     private int[] fibs;
 
-    public Fibonacci (int n) {
+    public Fibonacci(int n) {
         max = n;
         fibs = new int[max + 1];
         fibs[0] = 0;
@@ -15,7 +15,7 @@ public class Fibonacci {
         }
     }
 
-    public String toString () {
+    public String toString() {
         StringBuilder out = new StringBuilder();
         out.append(fibs[0]);
 
@@ -26,7 +26,7 @@ public class Fibonacci {
         return out.toString();
     }
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         int parsedArg = Integer.parseInt(args[0]);
 
         Fibonacci fibonacci = new Fibonacci(parsedArg);
