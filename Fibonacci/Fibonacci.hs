@@ -1,3 +1,11 @@
+----
+-- Fibonacci.hs
+-- by Daniel Brice
+-- Invoke as `Fibonacci <method> <num>`
+-- Where <method> is "rec", "mat", or "fast"
+-- Prints the first <num> Fibonacci numbers, one per line
+-- "mat" is implemented, but Data.Matrix is not available
+----
 import System.Environment (getArgs)
 --import Data.Matrix
 
@@ -17,6 +25,7 @@ recFib n = case n of
 --    v = fromList [ [0]
 --                 , [1]
 --                 ]
+matFib = error "Data.Matrix is not available."
 
 -- Memoized
 fastFibs :: [Integer]
@@ -33,6 +42,6 @@ main = do
     where
       fibs str = case str of
         "rec"  -> map recFib [0..]
-        --"mat"  -> map matFib [0..]
+        "mat"  -> map matFib [0..]
         "fast" -> fastFibs
         _      -> error "Please specify \"rec\", \"mat\", or \"fast\"."

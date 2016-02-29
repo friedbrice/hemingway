@@ -1,3 +1,10 @@
+###
+# Fibonacci.py
+# by Daniel Brice
+# Invoke as `python3 Fibonacci.py <method> <num>`
+# <method> should be "rec" or "fast"
+# Prints the first <num> Fibonacci numbers, one per line
+###
 import sys
 
 # Recursive
