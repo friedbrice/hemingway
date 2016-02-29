@@ -1,6 +1,6 @@
 # hemingway
-My solutions to the exercises in "If Hemingway Wrote Javascript," in Javascript, C, Python, and Haskell.
+My solutions to the exercises in "If Hemingway Wrote Javascript," in C, Haskell, Java, Javascript, and Python.
 
-"If Hemingway Wrote Javascript" is copyright (c) 2015 by Angus Croll.
+"If Hemingway Wrote Javascript" is copyright (c) 2014 by Angus Croll.
 
-The solutions I provide are copyright (c) 2015 Daniel Brice, under the terms of the GNU GPLv2.
+The solutions I provide are copyright (c) 2016 Daniel Brice, under the terms of the GNU GPLv2.
