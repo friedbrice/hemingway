@@ -2,7 +2,7 @@
 -- Happy.hs
 -- by Daniel Brice
 ----
-import Data.List (zipWith, foldl')
+import Data.List (foldl')
 import System.Environment (getArgs)
 
 digits :: Integer -> [Integer]
