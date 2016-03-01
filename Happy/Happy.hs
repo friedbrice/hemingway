@@ -1,3 +1,7 @@
+----
+-- Happy.hs
+-- by Daniel Brice
+----
 import Data.List (zipWith, foldl')
 import System.Environment (getArgs)
 
@@ -17,7 +21,7 @@ isHappy :: Integer -> Bool
 isHappy n = z == 1
   where
   stash = iterate squareSum n
-  z = fst . head . dropWhile (uncurry (/=)) 
+  z = fst . head . dropWhile (uncurry (/=))
     . tail . zip stash . dropHalf $ stash
 
 main :: IO()
