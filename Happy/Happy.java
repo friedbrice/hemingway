@@ -1,6 +1,8 @@
 /*
  *  Happy.java
  *  by Daniel Brice
+ *  Invoke as `java Happy <num>`
+ *  Prints all happy numbers not exceding <num>, one per line.
  */
 public class Happy {
 
