@@ -12,6 +12,7 @@ public class Factorial {
     arg = n;
     facts = new int[arg + 1];
     facts[0] = 1;
+
     for (int i = 1; i <= arg; i++) {
       facts[i] = facts[i - 1] * i;
     }
