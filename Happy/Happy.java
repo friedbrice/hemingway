@@ -15,14 +15,16 @@ public class Happy {
     // separates a number into digits and sums the squares of those digits
     int num = n;
     int sum = 0;
-
     ArrayList<Integer> digs = new ArrayList<>();
+    
+    // split into digits
     while (num / 10 > 0) {
       digs.add(num % 10);
       num = num / 10;
     }
     digs.add(num);
 
+    // sum squares and return
     for (int dig : digs) {
         sum += dig * dig;
     }
@@ -32,10 +34,10 @@ public class Happy {
 
   public Happy (int n) {
     happys = new ArrayList<>();
-    happys.add(1);
-
     ArrayList<Integer> unhappys = new ArrayList<>();
     ArrayList<Integer> unknowns = new ArrayList<>();
+
+    happys.add(1);
 
     // generate happys
     for (int i = 2 ; i <= n; i++) {
