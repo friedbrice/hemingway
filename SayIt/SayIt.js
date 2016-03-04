@@ -1,3 +1,14 @@
+// SayIt.js
+// by daniel
+//
+// We are to write a function that when given a string will
+// modify state and return itself and when given no argument
+// will cause an IO side effect and clear the state.
+//
+// We give three implementations:
+// - As a function that modified a global
+// - As a class with a single method `_`
+// - As a closure implemented by creating an internal wrapper function
 "use strict"
 
 // as a function that modifies a global
@@ -14,7 +25,7 @@ function sayIt(word) {
     }
 }
 
-// as an object with one property and one method
+// as a class with one property and one method
 function objectSayIt() {
     this.words = []
 
