@@ -3,7 +3,7 @@
 # by Daniel Brice
 # Invoke as `python3 Fibonacci.py <method> <num>`
 # <method> should be "rec" or "fast"
-# Prints the first <num> Fibonacci numbers, one per line
+# Prints the first <num> Fibonacci numbers
 ###
 import sys
 
@@ -30,6 +30,7 @@ def fastFibs(n):
 # Console IO
 method = sys.argv[1]
 n = int(sys.argv[2])
+
 if method == "rec":
   fibs = recFibs(n)
 elif method == "fast":
@@ -37,5 +38,6 @@ elif method == "fast":
 else:
   print("Please specify \"rec\" or \"fast\".")
   exit(1)
-print(fibs)
-exit()
+
+out = "\n".join(list(map(str,fibs)))
+print(out)

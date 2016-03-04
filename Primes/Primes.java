@@ -1,6 +1,6 @@
-/*
+/**
  * Primes.java
- * Created by daniel on 2/28/16.
+ * Created by daniel on 2/28/16
  * Invoke as `java Primes <num>
  * Prints the primes not exceeding <num>, in order, one per line
  */

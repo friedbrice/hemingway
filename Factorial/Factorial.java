@@ -1,4 +1,4 @@
-/*
+/**
  *  Factorial.java
  *  by Daniel Brice
  *  Invoke as `java Factorial <num>`

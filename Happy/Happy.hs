@@ -2,7 +2,7 @@
 -- Happy.hs
 -- by Daniel Brice
 -- Invoke as `Happy <num>`
--- Prints all happy numbers not exceding <num>, one per line.
+-- Prints all happy numbers not exceding <num>, one per line
 ----
 import Data.List (foldl')
 import System.Environment (getArgs)
