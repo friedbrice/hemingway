@@ -7,9 +7,14 @@
  * and return itself. Upon taking no input, the chainable function must act on
  * the current state and then clear the state.
  *
- * Since Java 1.7 does not allow returning a function, I've tried to model the
- * desired behavior as best as possible with a class that holds the state and
- * an overloaded method `SayIt._`
+ * It's difficult to model this problem in a static language. We want a function
+ * that either takes a string or takes nothing, and returns either a function or
+ * an IO side effect. We can implement this by overloading the function name,
+ * but I am not really sure that we can return a function in Java.
+ * 
+ * Because of the above considerations, I've tried to model the desired behavior
+ * as best as possible with a class that holds the state and an overloaded method
+ * called `SayIt._`
  */
 import java.util.ArrayList;
 
