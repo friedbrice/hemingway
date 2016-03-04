@@ -7,6 +7,11 @@
 
 data Codom = CodomIO (IO ()) | CodomFunc (Maybe String -> Codom)
 
-SayIt :: Maybe String -> Codom
-SayIt Nothing   = CodomIO (print "Nothing")
-SayIt (Just s0) = CodomFunc (\input -> case input of {Nothing -> print s0;  Just s1 -> SayIt(s0 ++ s1)})
+sayIt :: Maybe String -> Codom
+sayIt Nothing   = CodomIO (print "Nothing")
+sayIt (Just s0) = CodomFunc (\input -> case input of {Nothing -> CodomIO (print s0);  Just s1 -> CodomFunc (SayIt(s0 ++ s1)}))
+-- this has the basic control structure and state information. we just need a way to evaluate a CodomFunc
+
+evalCodomFunc :: CodomFunc -> Maybe String -> Codom
+evalCodomFunc (CodomFunc f) Nothing   = CodomIO (f Nothing)
+evalCodomFunc (CodomFunc f) (Just s0) = CodomFunc (f (Just s0))
