@@ -33,7 +33,7 @@ public class Happy {
     return sum;
   }
 
-  public Happy (int n) {
+  public Happy(int n) {
     happys = new ArrayList<>();
     ArrayList<Integer> unhappys = new ArrayList<>();
     ArrayList<Integer> unknowns = new ArrayList<>();
