@@ -4,6 +4,7 @@
  * Invoke as `java Factorial <num>`
  * Prints <num> factorial
  */
+
 public class Factorial {
   private int arg;
   private int[] facts;

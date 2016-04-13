@@ -17,6 +17,7 @@ sayIt string = \action -> do
   putStr string
   action
 
+
 main :: IO ()
 main
   = sayIt "Hi"

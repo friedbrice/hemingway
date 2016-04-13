@@ -4,6 +4,7 @@
  * Invoke as `java Fibonacci <num>`
  * Prints the first <num> Fibonacci numbers, one per line
  */
+
 public class Fibonacci {
   private int max;
   private int[] fibs;
