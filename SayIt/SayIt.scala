@@ -1,8 +1,8 @@
 /**
- * Factorial.scala
+ * SayIt.scala
  * by Daniel Brice
- * Invoke as `scala Factorial <num>`
- * Prints <num> factorial
+ * Invoke as `java SayIt`
+ * Prints "Hi There World"
  */
 
 object SayIt {
@@ -42,6 +42,6 @@ object SayIt {
   def main
     : Array[String] => Unit
     = args          => {
-      sayIt(Some("Hi"))(Some("There"))(Some("World"))(None)
+      println(sayIt(Some("Hi"))(Some("There"))(Some("World"))(None))
     }
 }
