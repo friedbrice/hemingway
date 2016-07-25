@@ -1,7 +1,7 @@
 /**
  * SayIt.scala
  * by Daniel Brice
- * Invoke as `java SayIt`
+ * Invoke as `scala SayIt`
  * Prints "Hi There World"
  */
 
