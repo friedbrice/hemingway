@@ -7,7 +7,7 @@
 
 object Factorial {
 
-  def factorial(n: Integer): Integer = {
+  def factorial(n: Int): Int = {
     1.to(n).foldLeft(1)(_ * _)
   }
 
